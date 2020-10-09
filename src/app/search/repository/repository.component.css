@@ -1,0 +1,70 @@
+#container {
+    margin: 100px auto;
+    width: 1200px;
+    height: 100vh;
+}
+
+#container h1 {
+    margin-bottom: 20px;
+}
+
+#repository{
+    display:flex;
+    align-items: center;
+    padding: 10px;
+    height: 90px;
+    width: 100%;
+    background: #fff;
+
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+   
+
+    text-decoration: none;
+    color: #000;
+
+    transition: transform 0.2s linear;
+}
+
+#repository:hover {
+    transform: translateX(15px);
+}
+
+#repository + #repository {
+    margin-top:20px;
+}
+
+#repository > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#repository >p{
+    width: 100%;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    background: #fff;
+}
+
+#repository  div {
+    background: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#repository div img {
+    background: #fff;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+}
+#repository p {
+    background: #fff;
+}
+
+#repository div + div {
+    margin-left: 20px;
+}

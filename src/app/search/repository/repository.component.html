@@ -1,0 +1,19 @@
+<div id="container">
+<h1>Repositórios de {{user}}</h1>
+
+
+    <a *ngFor="let repository of repositories" [href]="repository.html_url" id="repository">
+        <img [src]="repository.owner.avatar_url" [alt]="repository.name" >
+        <p>{{repository.name}}</p>
+        <div>
+            <img src="../../../assets/star.svg" alt="star" >
+            <p>{{repository.stargazers_count}}</p>
+        </div>
+        <div>
+            <img src="../../../assets/eye.svg" alt="eye" >
+            <p>{{repository.watchers_count}}</p>
+        </div>
+    </a>
+
+
+</div>
