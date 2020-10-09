@@ -1,0 +1,15 @@
+<div id="content">
+    <div id="input-container">
+        <input type="text" [value]=userInput (change)="handleInputUser($event.target.value)" placeholder="Adicione um usuário"/>
+        <button type="button" (click)="handleSearch()">Encontrar usuário</button>
+    </div>
+    
+   <a *ngFor="let user of users" id="user-container" [routerLink] = "[user.login, 'repos']" >
+        <img [src]="user.avatar_url" [alt]="user.name">
+        <div>
+            <strong>{{user.name}}</strong>
+            <p>{{user.bio}}</p>
+        </div>
+       
+    </a>
+</div>
